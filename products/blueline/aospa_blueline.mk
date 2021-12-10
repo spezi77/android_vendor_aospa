@@ -46,4 +46,9 @@ $(call inherit-product, vendor/google/blueline/blueline-vendor.mk)
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Pixel sepolicy
+BOARD_SEPOLICY_DIRS += \
+	hardware/google/pixel-sepolicy/flipendo \
+	hardware/google/pixel-sepolicy/turbo_adapter
+
 endif

@@ -25,11 +25,11 @@ DONT_DEXPREOPT_PREBUILTS := true
 TARGET_FS_CONFIG_GEN += vendor/aospa/target/config/config.fs
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-     vendor/aospa/target/config/aospa_vendor_framework_compatibility_matrix.xml
+#DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+#     vendor/aospa/target/config/aospa_vendor_framework_compatibility_matrix.xml
 
 # Include Common Qualcomm Device Tree.
-$(call inherit-product, device/qcom/common/common.mk)
+#$(call inherit-product, device/qcom/common/common.mk)
 
 # Include definitions for Snapdragon Clang
 $(call inherit-product, vendor/qcom/sdclang/config/SnapdragonClang.mk)
@@ -47,7 +47,8 @@ $(call inherit-product, vendor/aospa/target/product/properties.mk)
 $(call inherit-product, vendor/aospa/sepolicy/sepolicy.mk)
 
 # Include GMS, Modules, and Pixel features.
-$(call inherit-product, vendor/google/gms/config.mk)
+#$(call inherit-product, vendor/google/gms/config.mk)
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
 $(call inherit-product-if-exists, vendor/google/modules/build/mainline_modules_r.mk)
 #$(call inherit-product, vendor/google/pixel/config.mk)
 

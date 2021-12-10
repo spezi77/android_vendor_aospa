@@ -17,7 +17,7 @@
 DISABLE_EAP_PROXY := true
 
 # Include our Qualcomm Board configuration.
-include device/qcom/common/BoardConfigQcom.mk
+#include device/qcom/common/BoardConfigQcom.mk
 
 # Kernel configuration.
 include vendor/aospa/target/board/BoardConfigKernel.mk
